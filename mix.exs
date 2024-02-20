@@ -46,9 +46,9 @@ defmodule SwitchX.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:uuid, "~> 1.1"},
+      {:elixir_uuid, "~> 1.2"},
       {:mock, "~> 0.3.0", only: :test},
-      {:telemetry, "~> 0.4.2"},
+      {:telemetry, "~> 0.4 or ~> 1.0"},
       {:ex_doc, "~> 0.18.0", only: :dev, runtime: false}
     ]
   end
