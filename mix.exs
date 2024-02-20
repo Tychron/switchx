@@ -8,6 +8,9 @@ defmodule SwitchX.MixProject do
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
+      elixirc_options: [
+        warnings_as_errors: true,
+      ],
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
 
@@ -39,7 +42,7 @@ defmodule SwitchX.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :telemetry,]
+      extra_applications: [:logger, :telemetry]
     ]
   end
 
